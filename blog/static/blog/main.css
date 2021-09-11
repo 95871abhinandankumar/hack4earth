@@ -1,5 +1,6 @@
-body {
-    background: #fafafa;
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500 &display=swap");
+.main_page {
+    background: #dffdb2;
     color: #333333;
     margin-top: 5rem;
 }
@@ -63,7 +64,7 @@ a.article-title:hover {
 .article-metadata {
     padding-bottom: 1px;
     margin-bottom: 4px;
-    border-bottom: 1px solid #e3e3e3
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .article-metadata a:hover {
@@ -88,35 +89,110 @@ a.article-title:hover {
     font-size: 2.5rem;
 }
 
-
-.crousimg {
-    width: 100vw;
-    height: 89.6vh;
-    opacity: 0.8;
-}
-
 .carousel-caption {
-    position: absolute;
-    z-index: 1;
-    display: table;
-    width: 100%;
     height: 100%;
-}
-
-.absolute-div {
-    position: absolute;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    /* background-color: red; */
 }
 
-.carousel-caption h3 {
-    display: table-cell;
-    vertical-align: middle;
+.carousel-caption h1 {
+    left: 0;
+    line-height: 200px;
+    margin-top: 100px;
     text-align: center;
+    top: 50%;
+    width: 100%;
 }
-h1.a{
-    color:red;
+.carousel-caption h1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px #3cb371, -2px 1px 3px #3cb371;
+    color: #1b4e3b;
+    font-weight: 800;
+    font-family: "Prompt", sans-serif;
+}
+.carousel-caption h1 a:hover {
+    transform: scale(1.1);
+}
+
+#dvImage {
+    height: 50vw;
+    width: 50vw;
+    /* z-index: -1; */
+    opacity: 0.7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.base {
+    /* background-color: red; */
+    /* color: yellow; */
+    margin-top: 100px;
+}
+
+.about_heading {
+    /* background-color: red; */
+    font-size: 50px;
+}
+.about_sub {
+    /* background-color: green; */
+    font-size: 30px;
+}
+.about_content {
+    ;
+    /* background-color: blue; */
+}
+
+@media screen and(max-width: 700px) {
+    .carousel-caption {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .carousel-caption h1 a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 35px;
+        margin-top: -50px;
+        text-shadow: 3px 3px 3px #3cb371, -2px 1px 3px #3cb371;
+        color: #1b4e3b;
+        font-weight: 600;
+        font-family: "Prompt", sans-serif;
+    }
+
+    #dvImage {
+        height: 90vw;
+        width: 90vw;
+        z-index: 10;
+        opacity: 0.6;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
+        /* width: 100%; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.main_heading{
+    background-color: blue;
+}
+.main_heading h1{
+    font-size: 90px;
+    background-color: red;
+    margin-top: 50%;
 }
 
